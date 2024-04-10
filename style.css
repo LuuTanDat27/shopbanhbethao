@@ -39,11 +39,15 @@ body {
 }
 
 .left-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Căn phần tử trong left-section về hai đầu */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
     padding: 20px;
+    width: 100%;
     background-color: transparent;
     box-shadow: none;
 }
@@ -64,21 +68,43 @@ body {
     font-weight: bold;
     color: #333;
     text-decoration: none;
+    margin-top: 10px;
+}
+
+.userlogin {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 26px;
+    margin-left: auto;
+}
+
+.userlogin a {
+    color: #333;
+    text-decoration: none;
+     margin-right: 10px;
+}
+
+.userlogin a:hover {
+    color: #3d5afe;
 }
 
 .tabs-container {
     overflow-x: auto;
     white-space: nowrap;
-    border: 1px solid #ccc;
-    border-radius: 160px;
-    margin-top: 100px;
-    padding-bottom: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .tabs {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    
 }
 
 .tabs li {
@@ -106,4 +132,51 @@ body {
 .tabs li.active a {
     background-color: #ccc;
     color: #fff;
+}
+
+.cake-container-wrapper {
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;  
+    width: 90%; 
+    max-width: 600px;
+}
+
+.cake-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border-radius:20px;
+}
+
+.cake-item {
+    width: 150px;
+    margin: 20px;
+    text-align: center;
+    border-radius:20px;
+    border: 2px solid #ccc;
+}
+
+.cake-item img {
+    width: 90%;
+    height: auto; 
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 6px solid #fff;
+}
+
+.cake-item h2 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.cake-item p {
+    margin-top: 5px;
+    color: #757575;
 }
