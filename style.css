@@ -70,7 +70,7 @@ a {
     height: auto;
     border-radius: 50px; 
 }
-
+.logo a {
     font-weight: bold;
     color: #333;
     text-decoration: none;
@@ -79,7 +79,9 @@ a {
 
 .userlogin {
     display: flex;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0px; 
     gap: 5px;
     font-size: 26px;
     margin-left: auto;
@@ -88,7 +90,12 @@ a {
 .userlogin a {
     color: #333;
     text-decoration: none;
-     margin-right: 10px;
+    margin-right: 10px;
+}
+
+.userlogin p {
+  font-weight: bold;
+  font-text: 0px;
 }
 
 .userlogin a:hover {
@@ -96,6 +103,7 @@ a {
 }
 
 .tabs-container {
+    font-weight: bold;
     overflow-x: auto;
     white-space: nowrap;
     margin-top: 20px;
@@ -127,7 +135,7 @@ a {
     padding: 10px;
     text-decoration: none;
     color: #333;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 160px;
 }
 
@@ -141,13 +149,16 @@ a {
 }
 
 .cake-container-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
     padding: 0px; 
     margin-top: 20px;  
+    margin-left: 35%;
     width: 90%; 
     max-width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
 }
 
 .cake-container {
@@ -189,4 +200,7 @@ a {
 
 .banquyen {
     margin-top:10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
