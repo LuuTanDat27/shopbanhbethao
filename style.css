@@ -28,14 +28,21 @@ a {
     text-decoration: none;
 }
 
-body {
-    background: #eff3f4;
-    color: #757575;
+.scroll-header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff; /* Màu nền của header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+}
+
+.scroll-header.hidden {
+    top: -100px; /* Khi cuộn xuống dưới, header sẽ biến mất */
 }
 
 .left-section {
@@ -50,6 +57,7 @@ body {
     width: 100%;
     background-color: transparent;
     box-shadow: none;
+    margin-top: 10px;
 }
 
 .logo {
@@ -63,8 +71,6 @@ body {
     border-radius: 50px; 
 }
 
-.logo a {
-    margin-left: 10px;
     font-weight: bold;
     color: #333;
     text-decoration: none;
@@ -92,7 +98,7 @@ body {
 .tabs-container {
     overflow-x: auto;
     white-space: nowrap;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     padding-bottom: 15px;
     display: flex;
@@ -179,4 +185,8 @@ body {
 .cake-item p {
     margin-top: 5px;
     color: #757575;
+}
+
+.banquyen {
+    margin-top:10px;
 }
