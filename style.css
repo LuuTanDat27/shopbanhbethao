@@ -160,7 +160,7 @@ a {
 }
 
 .cake-item {
-    width: 150px;
+    width: 130px;
     margin: 20px;
     text-align: center;
     border-radius:20px;
@@ -173,7 +173,7 @@ a {
     aspect-ratio: 1/1;
     border-radius: 10px;
     object-fit: cover;
-    border-radius: 50px;
+    border-radius: 30px;
     border: 6px solid #fff;
 }
 
